@@ -1,23 +1,30 @@
-const example = {
-  login: false,
-  loginHref: '/login',
+const config = {
   logo: '/logo.png',
   logoAlt: 'University Logo',
-  ctaBtn: 'Apply Now',
-  ctaBtnHref: '#',
-  menueItems: [
-    { title: 'home', href: '#' },
-    { title: 'FAQ', href: '#' },
-    { title: 'articles', href: '#' },
+  login: true,
+  loginHref: '/login',
+  cta: false,
+  ctaTitle: 'Sign Up',
+  ctaBtnHref: '/register',
+  menuItems: [
+    { title: 'home', href: '/', useLink: false },
+    { title: 'FAQ', href: '/faq', useLink: true },
+    { title: 'articles', href: '/articles', useLink: true },
     {
       title: 'programs',
       href: '#',
+      disabled: true, // does not have a link only for flyouts
+      full: false, // default is false
       subMenu: [
-        { title: 'Undergraduate Programs', href: '#' },
-        { title: 'Graduate Programs', href: '#' },
-        { title: 'PhD Programs', href: '#' },
-        { title: 'Online Programs', href: '#' },
-        { title: 'Professional Development', href: '#' },
+        { title: 'Undergraduate Programs', href: '#', useLink: true },
+        { title: 'Graduate Programs', href: '#', useLink: true },
+        { title: 'PhD Programs', href: '#', useLink: true },
+        { title: 'Online Programs', href: '#', useLink: true },
+      ],
+      ctas: [
+        { title: 'Watch demo', href: '#' },
+        { title: 'Contact sales', href: '#' },
+        { title: 'View all products', href: '#' },
       ],
     },
   ],
