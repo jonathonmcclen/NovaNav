@@ -1,7 +1,7 @@
-const config = {
+const example = {
   logo: '/logo.png',
   logoAlt: 'University Logo',
-  login: true,
+  login: false,
   loginHref: '/login',
   cta: false,
   ctaTitle: 'Sign Up',
@@ -20,11 +20,7 @@ const config = {
         { title: 'Graduate Programs', href: '#', useLink: true },
         { title: 'PhD Programs', href: '#', useLink: true },
         { title: 'Online Programs', href: '#', useLink: true },
-      ],
-      ctas: [
-        { title: 'Watch demo', href: '#' },
-        { title: 'Contact sales', href: '#' },
-        { title: 'View all products', href: '#' },
+        { title: 'Professional Development', href: '#', useLink: true },
       ],
     },
   ],
