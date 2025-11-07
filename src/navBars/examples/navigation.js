@@ -16,6 +16,14 @@ const example = {
       disabled: true, // does not have a link only for flyouts
       full: false, // default is false
       subMenu: [
+        {
+          title: 'Campus Life',
+          href: '#',
+          useLink: true,
+          description: 'Explore housing, dining, clubs, and student resources',
+          image: '/DefaultMetaData.jpg',
+          imageAlt: 'Students walking on campus',
+        },
         { title: 'Undergraduate Programs', href: '#', useLink: true },
         { title: 'Graduate Programs', href: '#', useLink: true },
         { title: 'PhD Programs', href: '#', useLink: true },

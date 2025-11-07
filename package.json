@@ -1,9 +1,9 @@
 {
-  "name": "@jonathonscott/novanav",
+  "name": "realfastnav",
   "version": "0.1.1",
-  "description": "Composable React navigation bars, headers, and footers with Headless UI.",
-  "main": "dist/novanav.cjs.js",
-  "module": "dist/novanav.es.js",
+  "description": "RealFastNav: composable React navigation bars, headers, and footers with Headless UI.",
+  "main": "dist/realfastnav.cjs.js",
+  "module": "dist/realfastnav.es.js",
   "files": [
     "dist"
   ],
@@ -26,16 +26,16 @@
     "tailwind",
     "react-components"
   ],
-  "author": "Jonathon McClendon",
+  "author": "Jonathon Scott McClendon",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathonmcclendon/NovaNav.git"
+    "url": "git+https://github.com/jonathonmcclendon/RealFastNav.git"
   },
   "bugs": {
-    "url": "https://github.com/jonathonmcclendon/NovaNav/issues"
+    "url": "https://github.com/jonathonmcclendon/RealFastNav/issues"
   },
-  "homepage": "https://github.com/jonathonmcclendon/NovaNav#readme",
+  "homepage": "https://github.com/jonathonmcclendon/RealFastNav#readme",
   "dependencies": {
   },
   "peerDependencies": {

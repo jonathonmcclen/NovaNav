@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
-      name: "NovaNav",
-      fileName: (format) => `novanav.${format}.js`,
+      name: "RealFastNav",
+      fileName: (format) => `realfastnav.${format}.js`,
       formats: ["es", "umd", "cjs"], // <- add cjs for backward compatibility
     },
     rollupOptions: {

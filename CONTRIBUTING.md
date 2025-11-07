@@ -1,4 +1,4 @@
-# Contributing to NovaNav
+# Contributing to RealFastNav
 
 We love contributions! Here’s how you can help:
 

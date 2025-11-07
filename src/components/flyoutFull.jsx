@@ -53,26 +53,36 @@ export default function FlyoutFull({ item, onHover }) {
                   key={subItem.title}
                   className="group relative rounded-lg p-6 text-sm/6 hover:bg-gray-50"
                 >
-                  <div className="flex size-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    {(() => {
-                      const Icon = subItem.icon
-                      if (!Icon) return null
-                      if (React.isValidElement(Icon)) {
-                        return React.cloneElement(Icon, {
-                          className: 'size-6 text-gray-600 group-hover:text-primary',
-                          'aria-hidden': true,
-                        })
-                      }
-                      if (typeof Icon === 'function') {
-                        const C = Icon
-                        return <C aria-hidden className="size-6 text-gray-600 group-hover:text-primary" />
-                      }
-                      return null
-                    })()}
-                  </div>
+                  {subItem.image ? (
+                    <div className="aspect-[4/3] w-full overflow-hidden rounded-md bg-gray-100">
+                      <img
+                        alt={subItem.imageAlt || subItem.title}
+                        src={subItem.image}
+                        className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex size-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      {(() => {
+                        const Icon = subItem.icon
+                        if (!Icon) return null
+                        if (React.isValidElement(Icon)) {
+                          return React.cloneElement(Icon, {
+                            className: 'size-6 text-gray-600 group-hover:text-primary',
+                            'aria-hidden': true,
+                          })
+                        }
+                        if (typeof Icon === 'function') {
+                          const C = Icon
+                          return <C aria-hidden className="size-6 text-gray-600 group-hover:text-primary" />
+                        }
+                        return null
+                      })()}
+                    </div>
+                  )}
                   <a
                     href={subItem.href}
-                    className="mt-6 block font-semibold text-gray-900"
+                    className={`${subItem.image ? 'mt-4' : 'mt-6'} block font-semibold text-gray-900`}
                   >
                     {subItem.title}
                     <span className="absolute inset-0" />

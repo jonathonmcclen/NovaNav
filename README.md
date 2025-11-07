@@ -1,20 +1,20 @@
-## 🧭 NovaNav
+## 🧭 RealFastNav
 
 **Composable React navigation bars, headers, and footers.**
 
-[![npm version](https://img.shields.io/npm/v/%40jonathonscott%2Fnovanav.svg)](https://www.npmjs.com/package/@jonathonscott/novanav)
+[![npm version](https://img.shields.io/npm/v/realfastnav.svg)](https://www.npmjs.com/package/realfastnav)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Build](https://github.com/jonathonmcclendon/NovaNav/actions/workflows/build.yml/badge.svg)](https://github.com/jonathonmcclendon/NovaNav/actions)
-[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/jonathonmcclendon/NovaNav/issues)
+[![Build](https://github.com/jonathonmcclendon/RealFastNav/actions/workflows/build.yml/badge.svg)](https://github.com/jonathonmcclendon/RealFastNav/actions)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/jonathonmcclendon/RealFastNav/issues)
 
 ---
 
 ### Installation
 
 ```bash
-npm install @jonathonscott/novanav
+npm install realfastnav
 # or
-yarn add @jonathonscott/novanav
+yarn add realfastnav
 ```
 
 Peer dependencies (not bundled): `react`, `react-dom`, `@headlessui/react`, `@heroicons/react`, `react-icons`.
@@ -24,7 +24,7 @@ Peer dependencies (not bundled): `react`, `react-dom`, `@headlessui/react`, `@he
 ### Quick Start
 
 ```jsx
-import { WithFlyout } from "@jonathonscott/novanav";
+import { WithFlyout } from "realfastnav";
 
 export default function App() {
   return (
